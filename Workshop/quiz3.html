@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz on solar system</title>
+    <style>
+        .fblock {
+            width: 350px;
+            padding: 20;
+        }
+
+        .form {
+            width: 30vw;
+            padding: 20;
+            border-style: double;
+            border-radius: 9;
+            border-color: white;
+        }
+
+        .image {
+            height: 30vw;
+            padding: 10px;
+            float: right
+        }
+
+        body {
+            background-image: linear-gradient(white,blue, black);
+            /* background-colour: black; */
+            background-repeat: no-repeat;
+            height: auto
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="Mbclass"></div>
+    <center>
+        <h1><u>QUIZ</u></h1>
+    </center>
+    <img class=" image"
+        src="data:image/jpeg;base64,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"
+        alt="solar system">
+    <div class="Mbclass">
+        <form class="form">
+            <p>In which galaxy our solar system is there?</p>       
+            <select name="galaxy">
+                <option value=""></option>
+                <option value="Milkyway galaxy">Milkyway galaxy</option>
+                <option value="Andromeda Galaxy">Andromeda Galaxy</option>
+                <option value="Canis Major Dwarf Galaxy">Canis Major Dwarf Galaxy</option>
+                <option value="None above this">None above this</option>
+            </select>
+            <p>how many planets are there in our solar system?</p>
+            <select name="planets">
+                <option value=""></option>
+                <option value="seven">seven</option>
+                <option value="five">five</option>
+                <option value="two">two</option>
+                <option value="none above this">none above this</option>
+            </select>
+            <p>in which planet we live in??</p>
+            <select name="planet">
+                <option value=""></option>
+                <option value="earth">earth</option>
+                <option value="mercury">mercury</option>
+                <option value="mars">mars</option>
+                <option value="None above this">None above this</option>
+            </select>
+            <p>how many natural satellite earth have?</P>
+            <select name="natural sattellite">
+                <option value=""></option>
+                <option value="five">five</option>
+                <option value="two">two</option>
+                <option value="one">one</option>
+                <option value="six">six</option>
+            </select> <br></br>
+             <center><input name="submit" type="submit" placeholder="SUBMIT"></center>
+        </form>
+
+    </div>
+</body>
+</div>
+
+</body>
+
+</html>

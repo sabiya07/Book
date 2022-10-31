@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+        .mblock {
+            display: inline;
+        }
+
+        .fblock {
+            width: 350px;
+            padding: 25px;
+        }
+
+        .form {
+            width: 30vw;
+            padding: 10px;
+            border-style: double;
+            border-radius: 9;
+            border-color: #810955;
+        }
+
+        body {
+            background-image: linear-gradient(orange, white, green);
+            background-repeat: no-repeat;
+            height: auto;
+            ;
+        }
+
+        .image {
+            height: 30vw;
+            float: right;
+            padding-right: 10px;
+        }
+
+        @media screen and (max-width: 480px) {
+            .image {
+                display: none;
+            }
+
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="mblock">
+        <center>
+            <h1><u>Quiz</u></h1>
+        </center>
+        <img class="image"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Ashoka_Chakra.svg/800px-Ashoka_Chakra.svg.png"
+            alt="Ashoka Chakra ">
+        <div class="fblock">
+            <form class="form">
+                <p>Who is the Prime Minister Of India?</p>
+                <select name="Minister's">
+                    <option value=""></option>
+                    <option value="Narendra Modi">Narendra Modi</option>
+                    <option value="Manmohan Singh">Manmohan Singh</option>
+                    <option value="Atal Bihari Vajpayee">Atal Bihari Vajpayee</option>
+                </select>
+                <p>Who is the President Of India?</p>
+                <select name="President's">
+                    <option value=""></option>
+                    <option value="Droupadi Murmu">Droupadi Murmu</option>
+                    <option value="Ram Nath Kovind">Ram Nath Kovind</option>
+                    <option value="Parnab Mukherjee">Pranab Mukherjee</option>
+                </select>
+                <p>Who is the Governor Of India?</p>
+                <select name="Governor's">
+                    <option value=""></option>
+                    <option value="Biswabhusan Harichandan">Biswabhusan Harichandan</option>
+                    <option value="ShaktiKanta Das">ShaktiKanta Das</option>
+                    <option value="B.D. Mishra">B.D. Mishra</option>
+
+                </select>
+                <p>Who is the Cheif Minister Of Telengana?</p>
+                <select name="Cheif Minister's">
+                    <option value=""></option>
+                    <option value="YS Jagan Mohan Reddy">YS Jagan Mohan Reddy</option>
+                    <option value="Arvind Kejriwal">Arvind Kejriwal</option>
+                    <option value="K Chandrasekhar Rao">K Chandrasekhar Rao</option><br><br />
+                </select><br><br>
+                <input name="submit" type="submit" placeholder="SUBMIT">
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
