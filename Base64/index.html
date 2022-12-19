@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="encod.js"></script>
+    <script src="decode.js"></script>
+    <script src="genral.js"></script>
+
+    <title>Base-64 Converter</title>
+  </head>
+  <body>
+    <header class="head">
+      <h1>Base-64 Encoder/Decoder</h1>
+    </header>
+
+    <center>
+      <div class="main-container">
+        <div class="select">
+          <h1 class="main-head">What do you want to do?</h1>
+          <div class="btncls">
+            <button id="enc" onclick="selectFun()" value="encode">
+              Encode
+            </button>
+            <button id="dec" onclick="selectFun2()" value="decode">
+              Decode
+            </button>
+            <button onClick="window.location.reload();">Reset</button>
+          </div>
+        </div>
+        <br />
+
+        <div class="enter">
+          <textarea
+            name="input"
+            id="intext"
+            cols="40"
+            rows="2"
+            class="input"
+            placeholder="Enter Your String to Encode or Code to Decode"
+          ></textarea>
+        </div>
+        <div class="btn">
+          <button id="endbtn" class="btn" onclick="base64Encoding()" hidden>
+            Submit
+          </button>
+          <button id="decbtn" class="btn" onclick="decoding()" hidden>
+            Submit
+          </button>
+        </div>
+        <br />
+
+        <div class="result">
+          <textarea
+            name="output"
+            id="outtext"
+            cols="40"
+            rows="2"
+            class="output"
+            placeholder="Result"
+            disabled
+          ></textarea>
+
+          <!-- <button onClick="window.location.reload();">Try again</button> -->
+        </div>
+      </div>
+    </center>
+    <footer class="foot">&copy Mohd Najeeb</footer>
+  </body>
+</html>
